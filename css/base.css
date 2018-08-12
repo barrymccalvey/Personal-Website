@@ -286,6 +286,10 @@ p a, p a:visited {
 	width: 70%;
 }
 
+.hamburger:hover span:nth-child(1) {
+	right: 0%;
+}
+
 .hamburger span:nth-child(2) {
     top: calc(50% + 8px);
 }
