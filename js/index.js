@@ -41,3 +41,16 @@ $('.hamburger').on('click', function() {
     if($('header').hasClass('nav_open')) $('header').removeClass('nav_open');
     else $('header').addClass('nav_open');
 });
+
+// Change the titles on scroll
+$(window).scroll(function() {
+
+    $('section').each(function() {
+        var self = $(this),
+            title = self.find('img').attr('alt');
+        if (self.is(':inView')) {
+            $('#title').find('h2').text(title);
+        }
+    });
+
+}).scroll();
