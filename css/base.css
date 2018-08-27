@@ -352,10 +352,6 @@ p a, p a:visited {
 	transition-delay: .95s;
 }
 
-.nav_open .nav {
-	visibility: visible;
-}
-
 .nav_open {
 	position: fixed;
     height: 100vh;
@@ -381,33 +377,37 @@ p a, p a:visited {
     transform: translateY(-50%) rotate(-45deg);
 }
 
+.nav_open .nav {
+	visibility: visible;
+}
+
 .nav_open .nav_item {
     opacity: 1;
     transform: translateY(0px);
 }
 
 /*.nav_open .nav_item:nth-child(1) {
-	transition-delay: 700ms;
+	transition-delay: 0.95s;
 }
 
 .nav_open .nav_item:nth-child(2) {
-	transition-delay: 600ms;
+	transition-delay: .8s;
 }
 
 .nav_open .nav_item:nth-child(3) {
-	transition-delay: 500ms;
+	transition-delay: .65s;
 }
 
 .nav_open .nav_item:nth-child(4) {
-	transition-delay: 400ms;
+	transition-delay: .5s;
 }
 
 .nav_open .nav_item:nth-child(5) {
-	transition-delay: 300ms;
+	transition-delay: .35s;
 }
 
 .nav_open .nav_item:nth-child(6) {
-	transition-delay: 200ms;
+	transition-delay: .2s;
 }*/
 
 .hero {
