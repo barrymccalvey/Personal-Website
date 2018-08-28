@@ -350,7 +350,7 @@ header .nav_item:nth-child(1) {
 }
 
 /* IMPORTANT - The height doesn't animate so must have a delay equal to the length of all the transition */
-/* Fade in the background after 0.75s + nav_item transition time (0.5s) */
+/* Fade in the background after 0.75s + nav_item transition time (0.5s) + 0.1s spacer (not needed, but keeps it consistent) */
 /* Then transition the height with a 0s transition, needed for how the nav currently opens */
 header {
 	background-color: rgba(142,142,142, 0);
