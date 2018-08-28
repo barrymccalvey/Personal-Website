@@ -97,7 +97,6 @@ header {
 	right: 0;
 	margin-top: -1px;
 	padding-top: 30px;
-	transition: all 0.5s ease-in-out;
 }
 /*
 header.no_profile {
@@ -322,46 +321,89 @@ p a, p a:visited {
     transform: translateY(10px);
 }
 
-.nav_item a {
-	transition: all 0.4s ease-in-out;
-	transition-duration: 1s;
-	transition-timing-function: cubic-bezier(.42,0,0,.9);
+/* SEE NAV_OPEN TRANSITION FIRST (BELOW) */
+
+/* The last element to transition in, is the first to transition out */
+header .nav_item:nth-child(6) {
+	transition-delay: 0s;
 }
 
-.nav_item:nth-child(1) {
-	transition-delay: .2s;
+/* Add an extra 0.15s delay for each element */
+header .nav_item:nth-child(5) {
+	transition-delay: 0.15s;
 }
 
-.nav_item:nth-child(2) {
-	transition-delay: .35s;
+header .nav_item:nth-child(4) {
+	transition-delay: 0.3s;
 }
 
-.nav_item:nth-child(3) {
-	transition-delay: .5s;
+header .nav_item:nth-child(3) {
+	transition-delay: 0.45s;
 }
 
-.nav_item:nth-child(4) {
-	transition-delay: .65s;
+header .nav_item:nth-child(2) {
+	transition-delay: 0.6s;
 }
 
-.nav_item:nth-child(5) {
-	transition-delay: .8s;
+header .nav_item:nth-child(1) {
+	transition-delay: 0.75s;
 }
 
-.nav_item:nth-child(6) {
-	transition-delay: .95s;
+/* IMPORTANT - The height doesn't animate so must have a delay equal to the length of all the transition */
+/* Fade in the background after 0.75s + nav_item transition time (0.5s) */
+/* Then transition the height with a 0s transition, needed for how the nav currently opens */
+header {
+	background-color: rgba(142,142,142, 0);
+	transition: height 0s ease-in-out 1.85s, background-color 0.5s ease-in-out 1.35s;
 }
 
-.nav_open {
+
+/* SEE THIS FIRST */
+
+/* 0s delay, first element to transition on open fade in the background */
+header.nav_open {
 	position: fixed;
     height: 100vh;
-    background-color: #8e8e8e;
     left: 0;
     top: 0;
     padding-top: 30px;
     z-index: 1;
-    transition-delay: 1s;
+    background-color: rgba(142,142,142, 1);
+	transition: background-color 0.5s ease-in-out 0s;
 }
+
+/* Need to wait for the first transition (background color) to end (0.5s) See above */
+/* Then start transition after 0.5s + delay amount */
+
+header.nav_open .nav_item:nth-child(1) {
+	transition-delay: .6s;
+}
+
+header.nav_open .nav_item:nth-child(2) {
+	transition-delay: .75s;
+}
+
+header.nav_open .nav_item:nth-child(3) {
+	transition-delay: .9s;
+}
+
+header.nav_open .nav_item:nth-child(4) {
+	transition-delay: 1.05s;
+}
+
+header.nav_open .nav_item:nth-child(5) {
+	transition-delay: 1.2s;
+}
+
+header.nav_open .nav_item:nth-child(6) {
+	transition-delay: 1.35s;
+}
+
+/* header.nav_open .nav_item a {
+	transition: all 0.4s ease-in-out;
+	transition-duration: 1s;
+	transition-timing-function: cubic-bezier(.42,0,0,.9);
+} */
 
 .nav_open .hamburger span:nth-child(1) {
 	left: 100%;
