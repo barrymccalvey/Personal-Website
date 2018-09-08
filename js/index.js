@@ -15,11 +15,11 @@
 $(function(){
     $(window).scroll(function() { 
         if ($(this).scrollTop() > 800) { 
-            $(".to-top:hidden").css('visibility','visible');   
-            $(".to-top:hidden").fadeIn("slow");  
+            $(".to_top:hidden").css('visibility','visible');   
+            $(".to_top:hidden").fadeIn("slow");  
         } 
         else {     
-            $(".to-top:visible").fadeOut("slow"); 
+            $(".to_top:visible").fadeOut("slow"); 
         }  
     });
 });
@@ -42,15 +42,15 @@ $('.hamburger').on('click', function() {
     else $('header').addClass('nav_open');
 });
 
-// Change the titles on scroll
-$(window).scroll(function() {
+// // Change the titles on scroll
+// $(window).scroll(function() {
 
-    $('section').each(function() {
-        var self = $(this),
-            title = self.find('img').attr('alt');
-        if (self.is(':inView')) {
-            $('#title').find('h2').text(title);
-        }
-    });
+//     $('section').each(function() {
+//         var self = $(this),
+//             title = self.find('img').attr('alt');
+//         if (self.is(':inView')) {
+//             $('#title').find('h2').text(title);
+//         }
+//     });
 
-}).scroll();
+// }).scroll();
