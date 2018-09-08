@@ -269,8 +269,7 @@ p a, p a:visited {
     cursor: pointer;
     transition: all 0.3s ease-in-out;
     position: fixed;
-    right: 0px;
-    margin-right: 40px;
+    right: 40px;
 }
 
 .hamburger:hover {
@@ -1243,7 +1242,7 @@ and (max-width: 549px) {
 	}
 
 	.hamburger {
-		margin-right: 20px;
+		right: 20px;
 	}
 
 	.nav_item {
