@@ -304,6 +304,7 @@ p a, p a:visited {
 
 .nav {
 	visibility: hidden;
+	clear: both;
 }
 
 .nav_item {
