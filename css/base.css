@@ -570,6 +570,7 @@ h2.works-title {
 
 .client_logos {
 	display: flex;
+	align-items: center;
 	margin-top: 100px;
 }
 
@@ -577,38 +578,38 @@ h2.works-title {
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    opacity: .5;
+    opacity: .8;
     max-width: 100%; 
 }
 
-.client_logo [data-client=bmw] {
-	height: 100px;
+.client_logo[data-client=bmw] {
+	height: 50px;
+	width: 50px;
+}
+
+.client_logo[data-client=audi] {
+	height: 30px;
+	width: 88px;
+}
+
+.client_logo[data-client=porsche] {
+	height: 50px;
 	width: 100px;
 }
 
-.client_logo [data-client=audi] {
-	height: 60px;
-	width: 176px;
+.client_logo[data-client=pagani] {
+	height: 37px;
+	width: 71px;
 }
 
-.client_logo [data-client=porsche] {
-	height: 100px;
-	width: 201px;
+.client_logo[data-client=aws] {
+	height: 37px;
+	width: 62px;
 }
 
-.client_logo [data-client=pagani] {
-	height: 75px;
-	width: 142px;
-}
-
-.client_logo [data-client=aws] {
-	height: 75px;
-	width: 124px;
-}
-
-.client_logo [data-client=swag] {
-	height: 60px;
-	width: 242px;
+.client_logo[data-client=swag] {
+	height: 30px;
+	width: 121px;
 }
 
 .underline {
