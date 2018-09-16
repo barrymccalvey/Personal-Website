@@ -555,6 +555,10 @@ h2.works-title {
 	margin-bottom: 60px;
 }
 
+.intro {
+	margin-top: -100px;
+}
+
 .text-cols {
 	-webkit-columns: 300px 2;
 	-moz-columns: 300px 2;
@@ -564,8 +568,47 @@ h2.works-title {
 	column-gap: 35px;
 }
 
-.intro {
-	margin-top: -100px;
+.client_logos {
+	display: flex;
+	margin-top: 100px;
+}
+
+.client_logo {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: .5;
+    max-width: 100%; 
+}
+
+.client_logo [data-client=bmw] {
+	height: 100px;
+	width: 100px;
+}
+
+.client_logo [data-client=audi] {
+	height: 60px;
+	width: 176px;
+}
+
+.client_logo [data-client=porsche] {
+	height: 100px;
+	width: 201px;
+}
+
+.client_logo [data-client=pagani] {
+	height: 75px;
+	width: 142px;
+}
+
+.client_logo [data-client=aws] {
+	height: 75px;
+	width: 124px;
+}
+
+.client_logo [data-client=swag] {
+	height: 60px;
+	width: 242px;
 }
 
 .underline {
