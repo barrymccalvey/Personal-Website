@@ -580,9 +580,10 @@ h2.works-title {
     margin-right: auto;
     opacity: .8;
     max-width: 100%; 
+    max-height: 50px;
 }
 
-.client_logo[data-client=bmw] {
+/*.client_logo[data-client=bmw] {
 	height: 50px;
 	width: 50px;
 }
@@ -610,7 +611,7 @@ h2.works-title {
 .client_logo[data-client=swag] {
 	height: 30px;
 	width: 121px;
-}
+}*/
 
 .underline {
 	position: relative;
@@ -1387,11 +1388,12 @@ and (max-width: 768px) {
 	}
 
 	.client_logo {
-		transform: scale(1.2);
-		margin: 80px auto;
+		/*transform: scale(1.1);*/
+		margin: 30px auto;
+		max-width: 50%;
 	}
 
-	.client_logo[data-client=swag] {
+	.client_logo[data-client=aws], .client_logo[data-client=swag] {
 		margin-bottom: 0px;
 	}
 
