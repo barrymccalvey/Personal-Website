@@ -315,7 +315,7 @@ p a, p a:visited {
     opacity: 0;
     font-size: 30px;
     font-family: 'Playfair Display', Helvetica, Arial, sans-serif;
-    padding-top: 80px;
+    padding-top: 70px;
     transition: all 0.5s ease-in-out;
     transform: translateY(10px);
     line-height: 1.2;
@@ -1031,7 +1031,8 @@ footer.six.columns {
 }
 
 .social {
-	
+	display: inline-block;
+	margin-top: 35px;
 }
 
 .social a {
